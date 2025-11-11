@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sabor Tricolor - Recetas Bolivianas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #boton-volver {
+    background-color: #e30613; /* rojo */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  #boton-volver {
+    background-color: #a8000f;
+  }
+  </style>
+</head>
+<body>
+  <!-- titulo -->
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">ST</div>
+        <div>
+          <h1>Sabor Tricolor</h1>
+          <p class="lead">Descubre recetas deliciosas con los ingredientes que tienes en casa 🇧🇴</p>
+        </div>
+      </div>
+      <!-- Buscador -->
+      <div class="search-section">
+        <div class="controls">
+          <input id="ingredients" class="input" placeholder="Ej: papa, huevo, queso, carne..." />
+          <button id="searchBtn" class="btn">🔍 Buscar</button>
+          <button id="clearBtn" class="btn secondary">🗑️ Limpiar</button>
+        </div>
+        <!-- secciones de comida -->
+        <div class="category-nav">
+          <div class="category-pill active" data-section="all">📚 Todas</div>
+          <div class="category-pill" data-section="postres">🍰 Postres</div>
+          <div class="category-pill" data-section="ensaladas">🥗 Ensaladas</div>
+          <div class="category-pill" data-section="bolivianas">🇧🇴 Bolivianas</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <section>
+        <h2>Recetas Disponibles</h2>
+    
+        <div id="results" class="recipes" aria-live="polite">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modal-body">
+      </div>
+    </div>
+  </div>
+   <button id="boton-volver"><a href="principal.html">volver</a></button>
+  <!-- parte final -->
+  <footer>
+    🇧🇴 Sabor Tricolor 2025 - Recetas Bolivianas con Amor
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
